@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You ❤️</title>
+<style>
+body {
+  text-align: center;
+  background-color: #ffdde1;
+  font-family: monospace;
+  margin-top: 150px;
+}
+</style>
+</head>
+<body>
+
+<h1 id="text"></h1>
+
+<script>
+let message = "From the first moment I saw you, my heart knew ❤️ Will you be my Valentine?";
+let i = 0;
+
+function typeWriter() {
+  if (i < message.length) {
+    document.getElementById("text").innerHTML += message.charAt(i);
+    i++;
+    setTimeout(typeWriter, 50);
+  }
+}
+
+typeWriter();
+</script>
+
+</body>
+</html>
